@@ -1,9 +1,9 @@
 # PRINTF PROJECT
 ## By:
-* ##### David Agudelo Theran
-  * ###### [@Dagute](https://twitter.com/dagute)
-* ##### Emmanuel Monsalve Parra
-  * ###### [@MonsalveEmmus](https://twitter.com/MonsalveEmmus)
+* **David Agudelo Theran**
+  * [@Dagute](https://twitter.com/dagute)
+* **Emmanuel Monsalve Parra**
+  * [@MonsalveEmmus](https://twitter.com/MonsalveEmmus)
 
 ### OBJECTIVES: 
 In this repository you can find the process of building the printf function of the C library completely from scratch
