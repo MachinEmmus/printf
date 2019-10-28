@@ -31,7 +31,6 @@ int _strlen(char *s);
 int _putchar(char c);
 int only_char(va_list list);
 int print_string(va_list list);
-int only_percent(va_list list);
 int print_decimal(va_list list);
 int print_int(va_list list);
 

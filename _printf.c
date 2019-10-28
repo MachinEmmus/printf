@@ -11,8 +11,7 @@ va_list Ourlist;
 unsigned int i = 0, Count = 0, k = 0;
 	kind Flags[] = {
 			{'c', only_char    },
-			{'s', print_string },
-			{'%', only_percent }
+			{'s', print_string }
 	};
 	va_start(Ourlist, format);
 	while (format && format[i])
@@ -26,7 +25,7 @@ unsigned int i = 0, Count = 0, k = 0;
 		{
 			if (format[i] == percent && format[i + 1] != percent)
 			{
-				while (k < 3)
+				while (k < 2)
 				{
 					if (format[i + 1] == Flags[k].modifier)
 					{
