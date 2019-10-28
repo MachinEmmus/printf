@@ -6,7 +6,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
-#include <stdio.h>
 
 /*Macros*/
 #define True (1 == 1)

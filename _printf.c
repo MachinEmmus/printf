@@ -19,8 +19,8 @@ unsigned int i = 0, Count = 0, k = 0;
 	{
 		if (format[i] == percent && format[i + 1] == percent)
 		{
-			_putchar('%');
-			Count += 1, i += 1;
+			_putchar(percent);
+			Count += 1, i += 2;
 		}
 		else
 		{
@@ -28,7 +28,7 @@ unsigned int i = 0, Count = 0, k = 0;
 			{
 				while (k < 3)
 				{
-					if (format[i] == percent && format[i + 1] == Flags[k].modifier)
+					if (format[i + 1] == Flags[k].modifier)
 					{
 						Count += Flags[k].f(Ourlist);
 						i += 2;
