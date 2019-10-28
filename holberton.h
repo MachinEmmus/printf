@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
+#include <stdio.h>
 
 /*Macros*/
 #define True (1 == 1)
@@ -21,10 +23,17 @@
 typedef struct kings
 {
 	char modifier;
-	void (*f)(va_list);
+	int (*f)(va_list);
 } kind;
 
 /*Prototypes*/
 int _printf(const char *format, ...);
+int _strlen(char *s);
+int _putchar(char c);
+int only_char(va_list list);
+int print_string(va_list list);
+int only_percent(va_list list);
+int print_decimal(va_list list);
+int print_int(va_list list);
 
 #endif/*HOLBERTON_H*/
