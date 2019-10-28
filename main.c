@@ -9,16 +9,14 @@
  */
 int main(void)
 {
-	char *Emmus = "Emmus es una maquina";
-	char a = 's';
-	/*int len;
+	//int len;
 	int len2;
-	unsigned int ui;
+	/*unsigned int ui;
 	void *addr;*/
 
- 	_printf("%c y %% luego %s\n", a, Emmus);
-	/*len2 = _printf("Let's try to printf a simple sentence.\n");	
-	ui = (unsigned int)INT_MAX + 1024;
+ 	
+	len2 = _printf("Let's try to printf a simple sentence.\n");	
+	/*ui = (unsigned int)INT_MAX + 1024;
 	addr = (void *)0x7ffe637541f0;
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
@@ -42,5 +40,6 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");*/
+	printf("%d",len2);
     return (0);
 }
