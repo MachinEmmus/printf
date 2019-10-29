@@ -16,28 +16,26 @@ unsigned int i = 0, Count = 0, k = 0;
 	va_start(Ourlist, format);
 	while (format && format[i])
 	{
+		if (format == NULL && format[i] == '\0')
+			return (-1);
 		if (format[i] == percent && format[i + 1] == percent)
 		{
 			_putchar(percent);
 			Count += 1, i += 2;
 		}
-		else
+		else if (format[i] == percent && format[i + 1] != percent)
 		{
-			if (format[i] == percent && format[i + 1] != percent)
+			while (k < 3)
 			{
-				while (k < 2)
+				while (format[i + 1] == ' ')
+					i++;
+				if (format[i + 1] == Flags[k].modifier)
 				{
-					if (format[i + 1] == Flags[k].modifier)
-					{
-						Count += Flags[k].f(Ourlist);
-						i += 2;
-						break;
-					} k++;
-				}
+					Count += Flags[k].f(Ourlist), i += 2;
+				} k++;
 			}
 		}
-		_putchar(format[i]);
-		Count++, i++;
+		_putchar(format[i]), Count++, i++;
 	}
 	va_end(Ourlist);
 	return (Count);
