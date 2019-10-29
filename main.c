@@ -26,10 +26,10 @@ int main(void)
 	_printf("'\0'\n");
 
 	/*ui = (unsigned int)INT_MAX + 1024;
-	addr = (void *)0x7ffe637541f0;
-	_printf("Length:[%d, %i]\n", len, len);
-	printf("Length:[%d, %i]\n", len2, len2);
-	_printf("Negative:[%d]\n", -762534);
+	addr = (void *)0x7ffe637541f0;*/
+	_printf("Length:[%d]\n", 123);
+	printf("Length:[%d]\n", 123);
+	/*_printf("Negative:[%d]\n", -762534);
 	printf("Negative:[%d]\n", -762534);
 	_printf("Unsigned:[%u]\n", ui);
     printf("Unsigned:[%u]\n", ui);
