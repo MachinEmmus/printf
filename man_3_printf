@@ -1,0 +1,50 @@
+.TH man 1 "30 October 2019" "0.1" "_printf man page"
+.SH NAME
+.B _printf - write output to stdout
+.SH SYNOPSIS
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+The _printf function that produces output according to a format.
+
+.SH RETURN VALUE
+On successful return, the functions will return the number of characters printed (excluding the null byte used to end output to strings)
+.SH FORMAT SPECIFICATIONS
+.B c
+- Print a single character
+.B s
+- Print a string of characters
+.B %
+- Print a percent sign (\% also works)
+.B d
+- Print a decimal (base 10) number
+.B i
+- Print an integer in base 10
+.B b
+- Custom conversion specifiers, the unsigned int argument is converted to binary
+.B u
+- Print an unsigned decimal (base 10) number
+.B o
+- Print a number in octal (base 8)
+.B x
+- Print a number in hexadecimal (base 16)
+.B X
+- Print a number in hexadecimal (base 16) (for capital letters)
+.B p
+- The void * pointer argument is printed in hexadecimal
+.r
+- The same conversion functionality as "%s", writes the output into the buffer in reverse order
+.B R
+- prints the rot13'ed string
+.SH EXAMPLE
+_printf("I am %d years old", 25);
+
+output: I am 25 years old
+.SH NOTES
+- We don’t have to handle the flag characters
+- We don’t have to handle field width
+- We don’t have to handle precision
+- We don’t have to handle the length modifiers
+.SH BUGS
+No known bugs.
+-SH AUTHORS
+David Agudelo, Enmanuel Monsalve
