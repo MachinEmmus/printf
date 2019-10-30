@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 va_list ourlist;
-unsigned int i, count, vol;
+unsigned int i  = 0, count, vol = 0;
 	kind flags[] = {
 			{'c', only_char    },
 			{'s', print_string },
@@ -16,8 +16,7 @@ unsigned int i, count, vol;
 	if  (format == NULL)
 		return (-1);
 	va_start(ourlist, format);
-	count = 0; i = 0;
- 	if (i == 0 && format[i + 1] == '\0')
+	if (i == 0 && format[i + 1] == '\0')
 		return (-1);
 	for (i = 0; format[i] != '\0'; i++)
 	{
