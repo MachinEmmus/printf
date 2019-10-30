@@ -1,4 +1,4 @@
-.TH man 1 "30 October 2019" "0.1" "_printf man page"
+.TH man 3 "30 October 2019" "0.1" "_printf man page"
 .SH NAME
 .B _printf - write output to stdout
 .SH SYNOPSIS
@@ -46,5 +46,5 @@ output: I am 25 years old
 - We don’t have to handle the length modifiers
 .SH BUGS
 No known bugs.
--SH AUTHORS
+.SH AUTHORS
 David Agudelo, Enmanuel Monsalve
