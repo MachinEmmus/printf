@@ -7,13 +7,14 @@
 int _printf(const char *format, ...)
 {
 va_list ourlist;
-unsigned int i  = 0, count, vol = 0;
+unsigned int i = 0, count = 0, vol;
 	kind flags[] = {
-			{'c', only_char    },
-			{'s', print_string },
-			{'d', c_decimal    }
+			{'c', only_char},
+			{'s', print_string},
+			{'d', c_decimal},
+			{'i', c_decimal},
 	};
-	if  (format == NULL)
+	if  (!format)
 		return (-1);
 	va_start(ourlist, format);
 	if (i == 0 && format[i + 1] == '\0')
