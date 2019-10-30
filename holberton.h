@@ -7,10 +7,6 @@
 #include <unistd.h>
 #include <limits.h>
 
-/*Macros*/
-#define True (1 == 1)
-#define False !True
-
 /**
  * struct kings - Structure to printf
  * @modifier: To know as print in printf
@@ -36,5 +32,6 @@ int print_int(int n);
 int print_unint(unsigned int n);
 int print_uns(va_list list);
 int print_decimal(va_list list);
+int print_perc(void);
 
 #endif/*HOLBERTON_H*/
