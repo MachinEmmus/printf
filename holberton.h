@@ -33,5 +33,7 @@ int print_unint(unsigned int n);
 int print_uns(va_list list);
 int print_decimal(va_list list);
 int print_perc(void);
+int print_bin(va_list list);
+int print_oct(va_list list);
 
 #endif/*HOLBERTON_H*/
