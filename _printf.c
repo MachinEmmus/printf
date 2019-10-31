@@ -10,7 +10,8 @@ va_list ourlist;
 unsigned int i = 0, count = 0, vol;
 	kind flags[] = {
 		{'c', only_char}, {'s', print_string}, {'d', print_decimal},
-		{'i', print_decimal}, {'%', print_perc}, {'\0', NULL}
+		{'i', print_decimal}, {'%', print_perc}, {'b', print_bin},
+		{'o', print_oct}, {'u', print_uns}, {'\0', NULL}
 	};
 	if  (!format)
 		return (-1);
