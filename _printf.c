@@ -9,10 +9,8 @@ int _printf(const char *format, ...)
 va_list ourlist;
 unsigned int i = 0, count = 0, vol;
 	kind flags[] = {
-			{'c', only_char},
-			{'s', print_string},
-			{'d', c_decimal},
-			{'i', c_decimal},
+		{'c', only_char}, {'s', print_string}, {'d', print_decimal},
+		{'i', print_decimal}, {'%', print_perc}, {'\0', NULL}
 	};
 	if  (!format)
 		return (-1);
