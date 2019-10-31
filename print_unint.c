@@ -26,10 +26,9 @@ int print_unint(unsigned int  n)
 		td = n;
 		while (add > 0)
 		{
-			div = add - 1;
-			while (div > 0)
+			for (div = add - 1; div > 0; div--)
 			{
-			td = td / 10;
+				td = td / 10;
 			}
 			td = td % 10;
 			_putchar(td + '0');
