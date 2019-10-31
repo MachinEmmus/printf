@@ -2,7 +2,7 @@
 /**
  * print_uns - print a unsigned int
  * @list: argument list
- * return: nothing
+ * Return: nothing
  */
 int print_uns(va_list list)
 {
