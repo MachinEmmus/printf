@@ -9,8 +9,7 @@ int print_bin(va_list list)
 	int n = (va_arg(list, int));
 	int b = 0;
 	int mod;
-
-	x = 1;
+	int x = 1;
 
 	while (n != 0)
 	{
