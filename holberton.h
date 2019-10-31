@@ -18,7 +18,7 @@
 typedef struct kings
 {
 	char modifier;
-	int (*f)(va_list);
+	int (*f)();
 } kind;
 
 /*Prototypes*/
